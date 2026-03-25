@@ -1,0 +1,109 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Login box */
+.login-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Welcome text */
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Input fields */
+.input-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #00ff88;
+  outline: none;
+}
+
+.input-box label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: gray;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+/* Move label up when typing */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -15px;
+  font-size: 12px;
+  color: #3498db;
+}
+
+/* Forgot password */
+.forgot {
+  text-align: right;
+  margin: 10px 0;
+}
+
+.forgot a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Signup link */
+.signup-link {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.signup-link a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  background-image: url('image/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 710px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
